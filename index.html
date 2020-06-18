@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turismo UTN</title>
+    <link rel="stylesheet" href="css/stylestusimo.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+<header>
+    <div id="marca">
+        <h1>Desarrollo Web de Turismo</h1>
+    </div>
+    <nav id="botonera">
+        <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#destinos">Destinos</a></li>
+            <li><a href="#sobremi"> Sobre Mi</a></li>
+            <li><a href="pantilla.html">Contacto</a></li>
+            <li><a href="#adicionales">MVyV</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="contenedor">
+    
+    <section id="inicio">
+        <div id="imagen-1"></div>
+        
+    </section>
+
+    <section id="servicios"><!--BLOQUE 2-->
+        <div id="texto1-2"><h2>Nuestros Servicios</h2></div>
+        <div id="IconoyTexto1-bloque2">
+            <img src="img/dormir.svg" alt="Icono Alojamiento">
+            <h3 class="titulos-servicios">Alojamiento</h3>
+            <p>Suspendisse ac eros varius, tincidunt dui a, sollicitudin leo. Suspendisse potenti. Nunc dictum sem quis libero volutpat dignissim.</p>
+        </div>
+
+        <div id="IconoyTexto2-bloque2">
+            <img src="img/avion.svg" alt="Icono Transporte">
+            <h3 class="titulos-servicios">Transporte</h3>
+            <p>Suspendisse ac eros varius, tincidunt dui a, sollicitudin leo. Suspendisse potenti. Nunc dictum sem quis libero volutpat dignissim.</p>
+        </div>
+
+        <div id="IconoyTexto3-bloque2">
+            <img src="img/bailar.svg" alt="Icono Actividades">
+            <h3 class="titulos-servicios">ACTIVIDADES VARIAS</h3>
+            <p>Suspendisse ac eros varius, tincidunt dui a, sollicitudin leo. Suspendisse potenti.Nunc dictum sem quis libero!</p>
+        </div>
+
+    </section>
+
+    <section id="destinos"><!--BLOQUE 3-->
+        <div id="enlace2-3">
+            <h2>Nuestros Destinos</h2>
+        </div>
+        <div id="imagen-bloque3">
+            <img src="img/tutor.svg" alt="Icono Imagen">
+            <p>Para más información, hacé click y comunicate con uno de nuestros asesores</p>
+            <a class="boton boton-contacto" href="pantilla.html">Comunicate ;)</a>
+        </div>
+        <div id="texto2-bloque3">
+            <div class="maindiv">
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div id="enlace3-3">
+            <h2>Sobre Mi</h2>
+        </div>
+        <div id="imagen4-1">
+        <img id="imagen4" src="img/mau.png" alt="mauri">
+        </div>
+        <div id="texto4-1">
+            <h3>Una breve historia</h3>
+            <article>Fusce fringilla libero ut turpis suscipit pharetra. Proin faucibus tincidunt augue eget ultricies. Duis lobortis, orci et maximus sodales, justo ante pulvinar nibh, non accumsan justo neque quis mauris. Aenean tempus dapibus ipsum, sed lacinia ex consectetur vitae. Fusce molestie nisi at risus egestas, et mattis nisl interdum. Vestibulum vestibulum velit ut sapien rhoncus, non tristique nisl ornare. Duis fringilla porttitor commodo. Pellentesque congue dui id urna aliquet gravida. Pellentesque laoreet fermentum nisl, vitae accumsan felis dictum ut.</article>
+        </div>
+    </section>
+
+    <section id="adicionales">
+        <div id="enlace5-5">
+            <h2>Adicionales</h2>
+        </div>
+        <nav id="botonera-adicionales">
+            <ul>
+                <li><a href="#adicionales" onclick="mostrarElemento('mision'), ocultarElemento('valores', 'vision')">Nuestra Misión</a></li>
+                <li><a href="#adicionales" onclick="mostrarElemento('valores'), ocultarElemento('mision', 'vision')">Nuestros Valores</a></li>
+                <li><a href="#adicionales" onclick="mostrarElemento('vision'), ocultarElemento('mision', 'valores')">Nuestra Visión</a></li>
+            </ul>
+        
+            <div id="mision" style="display: none;">
+                <p>Tiam non leo sem. Vivamus cursus tellus non libero lobortis posuere. Vivamus quis est sed tellus faucibus finibus. Praesent neque tortor, consequat nec porta nec, laoreet quis sapien. Donec viverra sapien erat, non consequat felis efficitur ac. In iaculis volutpat mauris ut feugiat. Etiam consectetur orci eu mauris consectetur, ac molestie diam tempor.</p>
+            </div>
+            <div id="valores" style="display: none;">
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi. In sed blandit leo. Nulla quis magna nulla. Sed eget leo justo. Donec nec dolor tincidunt, malesuada sem ut, mattis dui. Integer tempus libero est. In ornare, nunc sit amet commodo sagittis, mauris metus sodales tellus, sit amet consectetur sapien nulla egestas orci.</p>
+            </div>
+            <div id="vision" style="display: none;">
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam vel massa sed velit molestie fermentum. Vestibulum convallis, purus eu pharetra varius, dui enim elementum nunc, eget maximus arcu enim sed dui. Suspendisse accumsan diam vel nunc varius, id viverra ante vestibulum. Curabitur maximus vitae dolor non commodo.</p>
+            </div>
+        </nav>
+        <div id="juego">
+            <h4>Gana un viaje para vos y 10 personas más!</h4>
+            <h5><a href="#juego" onclick="juego()">Ingresá al juego!!</a></h5>
+        </div>        
+    </section>
+
+</div>
+
+<footer>
+    <div id="copyright">
+        <P>Todos los derechos reservados &copy;</P>
+    </div>
+    <nav id="navegacion">
+        <h4>Encontranos en</h4>
+        <a class="links" href="https://www.instagram.com" target="new"><img class="img-nav" src="img/instagram.svg" alt=""></a>
+
+        <a class="links" href="https://www.facebook.com" target="new"><img class="img-nav" src="img/facebook.svg" alt=""></a>
+
+        <a class="links" href="https://twitter.com" target="new"><img class="img-nav" src="img/twitter.svg" alt=""></a>
+    </nav>
+
+</footer>
+<script type="text/javascript" src="js/archivo.js"></script>
+
+</body>
+</html>
